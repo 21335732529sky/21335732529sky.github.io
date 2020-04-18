@@ -1,46 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
-        <title>Hello World</title>
+        <title>Sora Ohashi</title>
         <meta charset='utf-8' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      body {
+        padding-top: 5rem;
+      }
+      .starter-template {
+        padding: 3rem 1.5rem;
+        text-align: center;
+    }
+    </style>
     </head>
     
-    <body>
-        <link href="main.css", rel='stylesheet', type='text/css'/>
-        <h3>自己紹介</h3>
-        <ul>
-            
-            <li>名前: 大橋 空</li>
-            <li>年齢: 22</li>
-            <li>趣味: テニス、一人カラオケ、プログラミング</li>
-            <li><a href="https://github.com/21335732529sky">githubアカウント</a></li>
-        </ul>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">HomePage</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a href="https://github.com/21335732529sky" class="nav-link"><i class="fab fa-github"></i></a> 
+      </li>
+      <li class="nav-item">
+        <a href="https://twitter.com/bridge19503105" class="nav-link"><i class="fab fa-twitter"></i></a>
+      </li>
+    </ul>
+  </div>
+<!--   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div> -->
+</nav>
 
-        <h3>研究内容</h3>
-        <p>医療ドメインの言い換え認識について研究しています。今の所、医療ドメインのテキストについて、与えられた文と同じ症例が書かれた文を抽出する、みたいなことをやってます</p>
-        <h4>現在の状況</h4>
-        <p>とりあえず言い換え認識モデルを作成して、どれをSentence Embeddingsに使うか迷っている状態<br/>
-           まずはAverage EmbeddingsとQuickThoughtを使ったEmbeddingについて検証した。(伸びしろなどを考えたらQuickThoughtの方が良さそう)</p>
-        <h4>モデル全体像</h4>
-        <img src="model.png"/>
-        <h4>今後</h4>
+<main role="main" class="container">
+    <div class="container">
+        <div class="row">
+        <h2>About Me</h2>
+        </div>
         <ul>
-            <li>QuickThoughtの学習コーパス増加</li>
-            <li>もっと別のSentence Embedding手法を考えて検証</li>
-            <li>今回試した2つの手法を合わせてみる</li>
-            <li>MLPを別のモデルに変えてみる(CNNとか)(前後の文脈を考慮させたい)</li>
+            <li>名前: 大橋 空</li>
+            <li>年齢: 24</li>
+            <li>研究分野: 医療分野の自然言語処理</li>
         </ul>
-        
-        
-        <h3>関連研究</h3>
+        <br>
+        <div class="row">
+            <h2>History</h2>
+        </div>
         <ul>
-            <li>Sadid A. Hasan, Bo Liu, Joey Liu, Ashequl Qadir, Kathy Lee, Vivek Datla, Aaditya Prakash, Oladimeji Farri<br/>
-                <a href="http://www.aclweb.org/anthology/W16-4207">Neural Clinical Paraphrase Generation with Attention.</a> ACL, 2016</li>
-            <li>Ellie Pavlick, Juri Ganitkevitch, Tsz Ping Chan, Xuchen Yao, Benjamin Van Durme,
-                Chris Callison-Burch,<br/>
-                <a href="http://www.aclweb.org/anthology/P15-2010">Domain-Specific Paraphrase Extraction.</a> ACL, 2015</li>
-            <li>Wenpeng Yin, Hinrich Schutze<br/>
-                <a href="http://www.aclweb.org/anthology/N15-1091">Convolutional Neural Network for Paraphrase Identification.</a> NAACL, 2015</li>
+            <li>2019/04 大阪大学大学院情報科学研究科入学</li>
+            <li>2019/03 大阪大学工学部卒業</li>
+            <li>2015/04 大阪大学工学部入学</li>
+            <li>2014/03 都島工業高校卒業</li>
         </ul>
-    </body>
+        <br>
+        <div class="row">
+            <h2>Publications</h2>
+        </div>
+        <ol>
+            <li>Sora Ohashi, Junya Takayama, Tomoyuki Kajiwara, Chenhui Chu, Yuki Arase<br>
+            Text Classificaition with Negative Supervision, ACL, 2020 (To appear)</li>
+            <li>大橋 空, 高山 隼矢, 梶原 智之, Chenhui Chu, 荒瀬 由紀<br>文符号化器のマルチタスク学習によるテキスト分類, NL研, 2019 
+                <a href="https://ipsj.ixsq.nii.ac.jp/ej/index.php?active_action=repository_view_main_item_detail&page_id=13&block_id=8&item_id=198866&item_no=1"><span class="badge badge-success">link</span></a></li>
+            <li>大橋 空, 高山 隼矢, 梶原 智之, Chenhui Chu, 荒瀬 由紀<br>医療ドメインにおける単語分散表現を用いた言い換え認識, NLP若手の会, 2018</li>
+        </ol>
+        <br>
+        <div class="row">
+            <h2>Others</h2>
+        </div>
+        <div class="row">
+            <p>勉強がてら作った何かを載せていく予定</p>
+        </div>
+        
+    </div>
+</main><!-- /.container -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <!-- <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script> -->
+  </body>
 </html>
